@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 
 gem "compass-rails"
+gem "coffee-rails"
 
 group :development, :test do
   gem 'binding_of_caller'

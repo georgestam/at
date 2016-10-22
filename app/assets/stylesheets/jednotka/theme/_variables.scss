@@ -49,7 +49,7 @@ $body-bg: $dark !default;
 $border-radius-base: 5px !default;
 $image-border-radius: $border-radius-base * 2 !default;
 $transition-duration-base: 300ms !default;
-$selection-bg: lighten($contrast, 30%) !default;
+$selection-bg: gray ;
 
 //content
 $main-content-bg: $white !default;
@@ -147,7 +147,7 @@ $quotes-client-line-active: $contrast !default;
 $quotes-client-color: $dark !default;
 
 // portfolio
-$portfolio-category-color: lighten($headings-color, 40%) !default;
+$portfolio-category-color: gray ;
 $portfolio-category-color-active: darken($portfolio-category-color, 10%) !default;
 $portfolio-hover-background: rgba($dark, .80) !default;
 $portfolio-color: $medium !default;
@@ -189,7 +189,7 @@ $accordion-toggle-color: $white !default;
 $accordion-toggle-bg: $contrast !default;
 $accordion-toggle-active-bg: darken($contrast, 5%) !default;
 $accordion-toggle-closed-bg: $dark !default;
-$accordion-toggle-closed-active-bg: lighten($dark, 5%) !default;
+$accordion-toggle-closed-active-bg: gray ;
 $accordion-bordered-toggle-border-color: $panel-border-color !default;
 $accordion-bordered-toggle-color: $contrast !default;
 $accordion-bordered-toggle-closed-color: $dark !default;
@@ -258,7 +258,7 @@ $state-info-border: darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
 // tables
 $table-bg: transparent !default;
-$table-bg-accent: lighten($very-light, 5%) !default;
+$table-bg-accent: gray;
 $table-bg-hover: darken($table-bg-accent, 2%) !default;
 $table-bg-active: $table-bg-hover !default;
 $table-border-color: $panel-border-color !default;
