@@ -13,3 +13,12 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+
+// jednotka files
+@import "jednotka/bootstrap/bootstrap.min";
+
+@import "jednotka/jednotka_green";
+//customize contrast color
+//$contrast: #01a9e0;
+//@import "jednotka/jednotka";
