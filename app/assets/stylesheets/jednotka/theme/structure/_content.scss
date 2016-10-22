@@ -59,7 +59,7 @@ body.boxed {
     &.fade.in {
       &:hover {
         border-color: darken($medium-light, 10%);
-        background-color: lighten($very-light, 2%);
+        background-color: gray;
       }
     }
   }

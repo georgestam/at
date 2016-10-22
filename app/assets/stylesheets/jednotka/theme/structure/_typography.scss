@@ -155,7 +155,7 @@ blockquote {
 
 code {
   color: darken($contrast, 20%);
-  background-color: lighten($contrast, 35%);
+  background-color: gray;
 }
 
 pre {
@@ -166,7 +166,7 @@ pre {
 
 .page-header {
   position: relative;
-  
+
   &.page-header-with-icon {
     text-align: center;
     border-top: 2px solid $page-header-with-icon-border;

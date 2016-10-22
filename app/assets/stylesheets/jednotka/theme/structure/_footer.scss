@@ -90,7 +90,7 @@
         border-color: $light;
 
         &:hover {
-          border-color: lighten($light, 10%);
+          border-color: gray;
         }
       }
     }
@@ -146,7 +146,7 @@
 
   #footer-copyright {
     background-color: $body-bg;
-    color: lighten($body-bg, 15%);
+    color: gray;
     padding: 20px 0;
     text-align: center;
 
