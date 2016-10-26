@@ -9,3 +9,5 @@
 //= require ./countdown/countdown
 //= require ./nivo_lightbox/nivo-lightbox.min
 //= require ./cycle/jquery.cycle.all.min
+
+
