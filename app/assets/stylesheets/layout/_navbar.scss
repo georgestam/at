@@ -19,6 +19,7 @@
   width: 100%;
 }
 
+
 /* Navbar logo */
 .navbar-wagon-brand img {
   width: 50px;
@@ -130,3 +131,26 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+
+.navbar-home {
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  a {
+    color: #ffffff !important;
+    font-size: 18px !important;
+  }
+  &.black {
+    background: rgba(0,0,0,0.7);
+    height: 50px;
+  }
+}
+
+.navbar-home-jordi {
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+

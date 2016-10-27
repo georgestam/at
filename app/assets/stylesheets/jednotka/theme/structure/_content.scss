@@ -41,7 +41,7 @@ body {
 #wrapper {
   background-repeat: no-repeat;
   background-position: center 0;
-  background-image: image-url("bg_wrapper.jpg");
+  // background-image: image-url("dive.jpeg");
   @include image-2x("bg_wrapper@2x.jpg", 1920px, 535px);
 }
 
