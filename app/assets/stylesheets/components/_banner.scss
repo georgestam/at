@@ -1,5 +1,5 @@
 .banner {
-  margin-top: -91px;  /* to show the bunner underneath the navbar */
+
   color: white;
   text-align: center;
   height: 100vh;
@@ -31,12 +31,14 @@
 
 
 .banner-small {
-  margin-top: -91px; /* to show the bunner underneath the navbar */
+
   color: white;
   text-align: center;
-  height: 60vh;
+  height: 400px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
+  background-position: right 0px bottom 0px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +47,7 @@
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 
-
+  margin-top: 60%;
   font-size: 50px;
   line-height: 75px;
 }
