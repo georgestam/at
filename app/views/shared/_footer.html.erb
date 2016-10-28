@@ -4,9 +4,13 @@
             <div class='row'>
               <div class='col-md-3 col-sm-6 info-box'>
                 <div class='logo-container'>
-                  <img alt="Jednotka" width="117" height="39" src="assets/images/at/logo_at.jpg" />
+                  <a >
+                    <%= link_to root_path, class: "navbar-wagon-brand padded" do %>
+                      <%= image_tag "at/logo_at.png" %>
+                      <% end %>
+                  </a>
                 </div>
-                <p class='no-mg-b'>Integer vulputate porta augue, sit amet interdum tellus commodo et. Sed volutpat neque vel turpis ultrices sini bibendum. Aliquam quis malesuada.</p>
+
               </div>
               <div class='col-md-3 col-sm-6 info-box'>
                 <h2 class='title'>Contact</h2>
@@ -43,39 +47,6 @@
                   </div>
                 </div>
               </div>
-              <div class='col-md-3 col-sm-6 info-box social-box'>
-                <h2 class='title'>Latest tweets</h2>
-                <div class='icon-boxes'>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-twitter text-contrast'></i>
-                    </div>
-                    <div class='content'>
-                      <p>
-                        Phasellus vulputate lobortis sem. Mauris id velit in urna.
-                        <br>
-                        <a class='time' href='#'>
-                          <i>1 hour ago</i>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div class='icon-box'>
-                    <div class='icon icon-wrap'>
-                      <i class='fa fa-twitter text-contrast'></i>
-                    </div>
-                    <div class='content'>
-                      <p>
-                        Etiam luctus, dui congue tempus blandit, dui.
-                        <br>
-                        <a class='time' href='#'>
-                          <i>3 hours ago</i>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class='col-md-3 col-sm-6 info-box'>
                 <h2 class='title'>Newsletter</h2>
                 <p>Proin condimentum, nisi vel vestibulum ultricies, nunc elit.</p>
@@ -100,9 +71,9 @@
             <div class='row'>
               <div class='col-lg-12 clearfix'>
                 <p class='copyright'>
-                  Copyright
+                  Academia Traslations
                   &copy;
-                  2013 Jednotka
+                  2016
                 </p>
                 <div class='links'>
                   <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
