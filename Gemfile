@@ -19,6 +19,9 @@ gem 'autoprefixer-rails'
 
 gem "compass-rails"
 gem "coffee-rails"
+gem 'cloudinary'
+
+gem 'figaro'
 
 group :development, :test do
   gem 'binding_of_caller'

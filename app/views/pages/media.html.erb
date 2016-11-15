@@ -1,97 +1,135 @@
+
       <div id='main' role='main'>
-        <div id='main-content-header'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-sm-12'>
-                <h1 class='title'>
-                  Blog (Large image)
-                </h1>
-                <ol class='breadcrumb'>
-                  <li>
-                    <a href='index.html'>
-                      <i class='fa fa-home'></i>
-                    </a>
-                  </li>
-                  <li class='active'>Blog</li>
-                </ol>
-              </div>
-            </div>
-          </div>
+
+      <div class="banner-small" style="background-image: linear-gradient(-210deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.3) 50%), url('<%= image_path 'at/blurry.jpg'%>');">
+        <div>
+           <h1 class='big fadeInRightBig animated'>Media</h2>
         </div>
+      </div>
         <div id='main-content'>
           <div class='container'>
-            <div class='row'>
-              <div class='col-sm-12 col-sm-12 col-md-12'>
-                <div class='text-boxes'>
-                  <div class='row text-box text-box-title-above text-box-big-image'>
-                    <div class='col-sm-12'>
-                      <h2 class='title'><a href="/blog_single_post.html">Cras tempus ligula a tempor adipiscing</a></h2>
-                      <div class='toolbar'>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-calendar'></i>
-                          <span>April 14, 2013</span>
-                        </a>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-user'></i>
-                          <span>John Doe</span>
-                        </a>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-comments'></i>
-                          <span>13 comments</span>
-                        </a>
-                      </div>
-                      <div class='row'>
-                        <div class='col-sm-12'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Cras tempus ligula a tempor adipiscing" width="848" height="364" src="http://placehold.it/848x364" />
-                          </a>
-                        </div>
-                        <div class='col-sm-12'>
-                          <p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo.</p>
-                          <a class='btn btn-contrast btn-bordered btn-xs' href='blog/bbc.html'>Read more</a>
-                        </div>
-                      </div>
-                      <hr class='hr-half'>
-                    </div>
-                  </div>
-                  <div class='row text-box text-box-title-above text-box-big-image'>
-                    <div class='col-sm-12'>
-                      <h2 class='title'><a href="/blog_single_post.html">Phasellus rutrum augue nec</a></h2>
-                      <div class='toolbar'>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-calendar'></i>
-                          <span>April 13, 2013</span>
-                        </a>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-user'></i>
-                          <span>Jane Doe</span>
-                        </a>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-comments'></i>
-                          <span>24 comments</span>
-                        </a>
-                      </div>
-                      <div class='row'>
-                        <div class='col-sm-12'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Phasellus rutrum augue nec" width="848" height="364" src="http://placehold.it/848x364" />
-                          </a>
-                        </div>
-                        <div class='col-sm-12'>
-                          <p>Praesent sed viverra lacus. Aliquam congue porttitor ipsum sed vulputate. Nam lacus nunc, malesuatda a massa sed, commodo placerat sem. Fusce rutrum bibendum adipiscing. Donec ac justo et metus vulputate faucibus. Mauris quis massa vel urna gravida. Nunc cursus urna ac molestie cursus. Donec non sapien neque.</p>
-                          <a class='btn btn-contrast btn-bordered btn-xs' href='blog_single_post.html'>Read more</a>
-                        </div>
-                      </div>
-                      <hr class='hr-half'>
-                    </div>
-                  </div>
 
+
+            <div class='row'>
+              <div class='col-sm-12'>
+                <div class='text-center'>
+                </div>
+                <div class='row'>
+                  <div class='col-sm-12'>
+                    <p class='lead lead-xs'>
+                   At Academia Translations we are passionate about the past, present and future of languages. Our director, Olivia , is a spokesperson for the Chartered Institute of Linguists and welcomes invitations from the media to discuss any language related topic. <br> <br>
+
+                   Appearances to date include:
+
+
+
+                   <br>
+                    </p>
+
+                  </div>
                 </div>
               </div>
+              <div class='col-sm-12'>
+                <div class='text-boxes'>
+                  <div class='row text-box text-box-title-above'>
+                    <div class='col-sm-12'>
+                      <h2 class='title'><a href="/blog_single_post.html"> BBC Breakfast</a></h2>
+                      <div class='toolbar'>
+                        <a class='btn btn-link' href='#'>
+                          <i class='fa fa-calendar'></i>
+                          <span>April 14, 2011</span>
+                        </a>
+                      </div>
+                      <div class='row'>
+                        <div class='col-sm-3'>
+                          <a href='blog_single_post.html'>
+                            <img class="img-responsive center-block img-rounded-half" alt="Cras tempus ligula a tempor adipiscing" width="189" height="129" src="<%= asset_path 'at/bbc.jpg' %> " />
+                          </a>
+                        </div>
+                        <div class='col-sm-9'>
+                          <p>Olivia Cockburn joined Susanna Reid and Bill Turnball on the BBC1 breakfast show to discuss the release of AD 61, a short film in Latin for which she was language consultant and script translator. Also discussed was Latin and its role in the 21st century. </p>
+
+                        </div>
+                      </div>
+                      <hr class='hr-half'>
+                    </div>
+                  </div>
+                  <div class='row text-box text-box-title-above'>
+                    <div class='col-sm-12'>
+                      <h2 class='title'><a href="/blog_single_post.html">  AD 61: The Latin Tapes. </a></h2>
+                      <div class='toolbar'>
+                        <a class='btn btn-link' href='#'>
+                          <i class='fa fa-calendar'></i>
+                          <span>Sep 8, 2010</span>
+                        </a>
+                      </div>
+                      <div class='row'>
+                        <div class='col-sm-3'>
+                          <a href='blog_single_post.html'>
+                            <iframe class="img-responsive center-block img-rounded-half"  width="189" src="https://www.youtube.com/embed/cysu-MF8Xcg" frameborder="0" allowfullscreen></iframe>
+                          </a>
+                        </div>
+                        <div class='col-sm-9'>
+                          <p>Olivia Cockburn was the language consultant  and voice coach for this short film in Latin directed by George Sharpley of Lingua UK. The film, a “talking heads” style piece featuring different members of society from the first century AD in Rome, required a detailed and scrupulous reconstruction of the different Latin accents and features used at the time. (You may spot Olivia acting in the film too!).</p>
+
+                        </div>
+                      </div>
+                      <hr class='hr-half'>
+                    </div>
+                  </div>
+                  <div class='row text-box text-box-title-above'>
+                    <div class='col-sm-12'>
+                      <h2 class='title'><a href="/blog_single_post.html"> UCB UK National Radio</a></h2>
+                      <div class='toolbar'>
+                        <a class='btn btn-link' href='#'>
+                          <i class='fa fa-calendar'></i>
+                          <span>May 3, 2013</span>
+                        </a>
+                      </div>
+                      <div class='row'>
+                        <div class='col-sm-3'>
+                          <a href='blog_single_post.html'>
+                            <img class="img-responsive center-block img-rounded-half" alt="Lorem ipsum dolor sit amet" width="189" height="129" src="http://placehold.it/189x129" />
+                          </a>
+                        </div>
+                        <div class='col-sm-9'>
+                          <p>Following an article in the Telegraph newspaper on the cultural connotations of certain accents, Olivia was spokesperson for the Chartered Institute of Linguists in this interview on sociolinguistics and the place that different accents have in society. </p>
+
+                        </div>
+                      </div>
+                      <hr class='hr-half'>
+                    </div>
+                  </div>
+                  <div class='row text-box text-box-title-above'>
+                    <div class='col-sm-12'>
+                      <h2 class='title'><a href="/blog_single_post.html">TVE Spanish Television </a></h2>
+                      <div class='toolbar'>
+                        <a class='btn btn-link' href='#'>
+                          <i class='fa fa-calendar'></i>
+                          <span>Sept 1, 2015</span>
+                        </a>
+                      </div>
+                      <div class='row'>
+                        <div class='col-sm-3'>
+                          <a href='blog_single_post.html'>
+                            <img class="img-responsive center-block img-rounded-half" alt="Aliquam congue porttitor" width="189" height="129" src="http://placehold.it/189x129" />
+                          </a>
+                        </div>
+                        <div class='col-sm-9'>
+                          <p>Spanish is one of Latin´s direct descendants and it may be argued that is just an ¨evolved¨ form of Latin with a different name. In this interview with TVE´s programme ¨Saca la Lengua”, Olivia discusses the use of Latin terms in Spanish. </p>
+
+                        </div>
+                      </div>
+                      <hr class='hr-half'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class='fade' id='scroll-to-top'>
           <i class='fa fa-chevron-up'></i>
         </div>
       </div>
-    </div>
+
