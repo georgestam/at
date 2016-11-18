@@ -42,9 +42,9 @@
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Cras tempus ligula a tempor adipiscing" width="189" height="129" src="<%= asset_path 'at/bbc.jpg' %> " />
-                          </a>
+
+                            <%= image_tag('at/bbc.jpg', :class => "img-responsive center-block img-rounded-half") %>
+
                         </div>
                         <div class='col-sm-9'>
                           <p>Olivia Cockburn joined Susanna Reid and Bill Turnball on the BBC1 breakfast show to discuss the release of AD 61, a short film in Latin for which she was language consultant and script translator. Also discussed was Latin and its role in the 21st century. </p>
@@ -65,9 +65,9 @@
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
-                          <a href='blog_single_post.html'>
-                            <iframe class="img-responsive center-block img-rounded-half"  width="189" src="https://www.youtube.com/embed/cysu-MF8Xcg" frameborder="0" allowfullscreen></iframe>
-                          </a>
+
+                            <iframe class="img-responsive center-block img-rounded-half" src="https://www.youtube.com/embed/cysu-MF8Xcg" frameborder="0" allowfullscreen></iframe>
+
                         </div>
                         <div class='col-sm-9'>
                           <p>Olivia Cockburn was the language consultant  and voice coach for this short film in Latin directed by George Sharpley of Lingua UK. The film, a “talking heads” style piece featuring different members of society from the first century AD in Rome, required a detailed and scrupulous reconstruction of the different Latin accents and features used at the time. (You may spot Olivia acting in the film too!).</p>
@@ -88,9 +88,15 @@
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Lorem ipsum dolor sit amet" width="189" height="129" src="http://placehold.it/189x129" />
-                          </a>
+
+
+                            <%= cl_video_tag("at/accent_int_for_Olivia",
+                              :height => 50,
+                              :controls => true,
+                              :class => "img-responsive center-block img-rounded-half small-height",
+                              :fallback_content => "Your browser does not support HTML5 video tags" ) %>
+
+
                         </div>
                         <div class='col-sm-9'>
                           <p>Following an article in the media on the cultural connotations of certain accents, Olivia was spokesperson for the Chartered Institute of Linguists in this interview on sociolinguistics and the place that different accents have in society. </p>
@@ -111,12 +117,19 @@
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Aliquam congue porttitor" width="189" height="129" src="http://placehold.it/189x129" />
-                          </a>
+                            <div>
+                            <%= cl_video_tag("at/Saca_la_lengua1",
+                              :crop => "fill",
+                              :controls => true,
+                              :class => "img-responsive center-block img-rounded-half",
+                              :fallback_content => "Your browser does not support HTML5 video tags" ) %>
+                            </div>
                         </div>
                         <div class='col-sm-9'>
-                          <p>Spanish is one of Latin's direct descendants and it may be argued that is just an ¨evolved¨ form of Latin with a different name. In this interview with TVE´s programme "Saca la Lengua", Olivia discusses the use of Latin terms in Spanish. </p>
+                          <p>Spanish is one of Latin's direct descendants and it may be argued that is just an ¨evolved¨ form of Latin with a different name. In this interview with TVE´s programme "Saca la Lengua", Olivia discusses the use of Latin terms in Spanish.
+
+
+                           </p>
 
                         </div>
                       </div>
@@ -132,4 +145,8 @@
           <i class='fa fa-chevron-up'></i>
         </div>
       </div>
+
+
+
+
 
