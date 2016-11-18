@@ -13,7 +13,7 @@
     text-align: center;
 
     @include sm-plus {
-      text-align: left;
+      text-align: justify;
     }
 
     .title {
