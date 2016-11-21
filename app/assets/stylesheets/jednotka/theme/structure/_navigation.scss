@@ -63,7 +63,7 @@
         > li {
           > a {
             color: $nav-collapsed-item-active-bg;
-            border-bottom: 1px solid;
+            // border-bottom: 1px solid;
             padding: 10px 15px 10px 25px;
             @include rgba-fallback(darken($nav-collapsed-item-border-color, 40%), "border-color", $nav-collapsed-bg);
 
@@ -154,7 +154,7 @@
 
     > li {
       > a {
-        border-bottom: 1px solid;
+        // border-bottom: 1px solid;
         @include rgba-fallback($nav-collapsed-item-border-color, "border-color", $nav-collapsed-bg);
 
         span {
