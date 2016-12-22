@@ -1,3 +1,6 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+This project is developed for my client Acadamedia Translations (http://www.academiatranslations.co.uk/)
 
-Everything is more or less ok, bu I added the term gray or grey (dont remember) to fix the isue related with lighten cannot inherit
+It is an ongoing project, as the plan is to become a more dynamic platform.
+
+I included also some components from https://github.com/lewagon/rails-templates)  
+
