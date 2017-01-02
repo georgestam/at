@@ -2,7 +2,7 @@
 
   color: white;
   text-align: center;
-  height: 80vh;
+  height: 70vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -14,8 +14,8 @@
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 
-  margin-top: 10%;
-  font-size: 60px;
+  margin-top: 20%;
+  font-size: 45px !important;
   line-height: 75px;
 }
 .banner p {
