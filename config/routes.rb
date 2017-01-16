@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get "blog", to: "pages#blog", as: :blog
   get "blog/bbc", to: "pages#bbc", as: :bbc
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # resources :blog, only:[:show, :index, :new, :create, :edit, :update,:destroy]
 end

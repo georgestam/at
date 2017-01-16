@@ -48,6 +48,19 @@
                   </a>
                 </a>
                 </li>
+
+                <% if current_user %>
+                  <li class='dropdown'>
+                    <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='blog.html'>
+                    <a href="/blog.html">
+                      <span>
+                        Blog
+                      </span>
+                      </a>
+                    </a>
+                  </li>
+                <% end %>
+
                 <li class='dropdown'>
                   <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='media.html'>
                     <a href="/media.html">
@@ -57,15 +70,7 @@
                     </a>
                   </a>
                 </li>
-                <!-- <li class='dropdown'>
-                  <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='blog.html'>
-                  <a href="/blog.html">
-                    <span>
-                      Blog
-                    </span>
-                    </a>
-                  </a>
-                <!-- </li> -->
+
               </ul>
             </div>
           </nav>
