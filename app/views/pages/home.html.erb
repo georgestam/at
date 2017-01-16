@@ -87,12 +87,17 @@
                 <div class='row'>
                   <div class='col-sm-12'>
                     <div class='client-slideshow cycle-slideshow' data-cycle-carousel-fluid='true' data-cycle-fx='carousel' data-cycle-timeout='2000'>
-                      <img alt="" height="90" src='<%= image_path 'at/santander.jpg'%>' />
-                      <img alt="" height="70" src='<%= image_path 'at/ceigram.jpg'%>' />
-                      <img alt="" height="80" src='<%= image_path 'at/universidad_autonoma.jpg'%>' />
 
-                      <img alt="" height="70" src='<%= image_path 'at/Logo_basaldua.jpg'%>' />
-                      <img alt="" height="80" src='<%= image_path 'at/respira.jpg'%>' />
+                      <%= cl_image_tag("at/santander.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], height: '90') %>
+
+                      <%= cl_image_tag("at/ceigram.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], height: '70') %>
+
+                      <%= cl_image_tag("at/universidad_autonoma.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], height: '80') %>
+
+
+                      <%= cl_image_tag("at/Logo_basaldua.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], height: '70') %>
+
+                      <%= cl_image_tag("at/respira.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], height: '80') %>
 
                     </div>
                   </div>

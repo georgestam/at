@@ -37,7 +37,8 @@
                 <div class=''>
                   <a >
                     <%= link_to root_path, class: "navbar-wagon-brand-large" do %>
-                      <%= image_tag "at/logo_with_name.png" %>
+
+                      <%= cl_image_tag("at/logo_with_name.png", :client_hints=>true, :transformation=>[{:dpr=>"auto"}]) %>
                       <% end %>
                   </a>
                 </div>

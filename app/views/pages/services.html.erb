@@ -1,7 +1,7 @@
 
 <div id='main' role='main'>
 
-  <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path("at/light-300431.jpg", :client_hints=>true, :transformation=>[:dpr=>"auto", :gravity=>"south", :crop=>"fill"}]) %>');">
+  <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path("at/light-300431.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :gravity=>"south", :crop=>"fill"}]) %>');">
 
     <div>
        <h1 class='big fadeInRightBig animated'>Services</h2>
@@ -124,7 +124,10 @@
           </div>
           <div class='text-boxes'>
             <div class='row text-box'>
-              <div class='col-sm-4 col-sm-push-2'><img class="img-responsive center-block" alt="world" width="150" src=" <%= asset_path 'at/countries-1301799.png' %>" /></div>
+              <div class='col-sm-4 col-sm-push-2'>
+              <%= cl_image_tag("at/countries-1301799.png", :client_hints=>true, :transformation=>[{:width => 150, :height => 150, :dpr=>"auto", :crop => :fit}], :class => "img-responsive center-block" ) %>
+
+              </div>
               <div class='col-sm-4 col-sm-push-2'>
                 <h3 class='title'><a href="#">Native professionals: </a></h3>
                 <p>Our translators only ever work into their mother tongue. They are experts in the target culture so your message will not get lost. </p>
@@ -132,7 +135,11 @@
             </div>
             <hr>
             <div class='row text-box'>
-              <div class='col-sm-4 col-sm-push-6'><img class="img-responsive center-block" alt="Praesent vitae adipiscing nunc" width="330" src=" <%= asset_path 'at/office-59413.jpg' %>"    /></div>
+
+
+              <div class='col-sm-4 col-sm-push-6'>
+               <%= cl_image_tag("at/office-594132_1.jpg", :client_hints=>true, :transformation=>[{ :height => 150, :dpr=>"auto", :crop => :fit}], height: '150', :class => "img-responsive center-block" ) %>
+               </div>
               <div class='col-sm-4 col-sm-pull-2'>
                 <h3 class='title'><a href="#">Second line assurance:</a></h3>
                 <p>Translations are reviewed by a second professional linguist and expert in the subject matter. </p>
@@ -140,8 +147,13 @@
             </div>
             <hr>
             <div class='row text-box'>
-              <div class='col-sm-2 col-sm-push-2'><img class="img-responsive center-block" alt="Praesent vitae adipiscing nunc" height="150" src="<%= asset_path 'at/MITI.jpg' %>" /></div>
-               <div class='col-sm-2 col-sm-push-2'><img class="img-responsive center-block" alt="Praesent vitae adipiscing nunc" height="150" src="<%= asset_path 'at/chartered.jpg' %>" /></div>
+
+              <div class='col-sm-2 col-sm-push-2'>
+               <%= cl_image_tag("at/MITI.jpg", :client_hints=>true, :transformation=>[{:width => 150, :height => 150, :dpr=>"auto", :crop => :fit}], height: '150', :class => "img-responsive center-block" ) %>
+               </div>
+               <div class='col-sm-2 col-sm-push-2'>
+               <%= cl_image_tag("at/chartered.jpg", :client_hints=>true, :transformation=>[{:width => 150, :height => 150, :dpr=>"auto", :crop => :fit}], :class => "img-responsive center-block" ) %>
+               </div>
               <div class='col-sm-4 col-sm-push-2'>
                 <h3 class='title'><a href="#">The best of the best: </a></h3>
                 <p>All of our linguists are experienced members of recognised professional bodies. In the UK, this means they are Full Members of the Chartered Institute of Linguists or Qualified Members of the Institute of Translation and Interpreting.</p>
@@ -149,7 +161,9 @@
             </div>
             <hr>
             <div class='row text-box'>
-              <div class='col-sm-4 col-sm-push-6'><img class="img-responsive center-block" alt="Praesent vitae adipiscing nunc" width="330" height="183" src="<%= asset_path 'at/workplace.jpg' %>" /></div>
+              <div class='col-sm-4 col-sm-push-6'>
+               <%= cl_image_tag("at/workplace-1245776.jpg", :client_hints=>true, :transformation=>[{:width => 330, :height => 183, :dpr=>"auto", :crop => :fit}], :class => "img-responsive center-block" ) %>
+              </div>
               <div class='col-sm-4 col-sm-pull-2'>
                 <h3 class='title'><a href="#">We care:</a></h3>
                 <p>Our translations are always provided with a commentary that will take you through our choice of terms and style. You will be able to engage with our project manager, always a linguist, on technical discussions related to the translation.  This way you will have total peace of mind that your carefully chosen words have not got lost in translation. </p>
