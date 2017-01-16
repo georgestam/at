@@ -11,8 +11,8 @@
 
 admin = User.new ({
   email: "info@academiatranslations.co.uk",
-  password: "cockburn"
-  # admin:true
+  password: "cockburn",
+  admin:true
 })
 
 admin.save
