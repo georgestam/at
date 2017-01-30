@@ -22,6 +22,8 @@ gem 'cloudinary'
 gem 'figaro'
 gem 'raygun4ruby'
 
+gem 'rails_admin', '~> 1.0'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'

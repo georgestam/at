@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root to: 'pages#home'
 
@@ -13,7 +14,10 @@ Rails.application.routes.draw do
   get "media", to: "pages#media", as: :media
 
   get "blog", to: "pages#blog", as: :blog
-  get "blog/bbc", to: "pages#bbc", as: :bbc
+  # get "blog/bbc", to: "pages#bbc", as: :bbc
+
+  resources :articles
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # resources :blog, only:[:show, :index, :new, :create, :edit, :update,:destroy]
