@@ -10,8 +10,8 @@
 
 
 admin = User.new ({
-  email: "info@academiatranslations.co.uk",
-  password: "cockburn",
+  email: "info@academiatranslations.com",
+  password: "pollosquemados",
   admin:true
 })
 
