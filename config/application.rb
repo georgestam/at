@@ -17,10 +17,6 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 
-# 3 lines to make Cheditor work
-
-
-
 
 module AcademiaTranslations
   class Application < Rails::Application
