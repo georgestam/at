@@ -23,7 +23,7 @@
                   <div class='sidebar-collapse collapse'>
                     <div class='box'>
                       <h3 class='title'>Search in blog</h3>
-                      <form action='blog_large.html' method='get'>
+                      <form >
                         <div class='input-group'>
                           <input class='form-control' placeholder='Search...' type='text'>
                           <span class='input-group-btn'>
@@ -114,7 +114,7 @@
                   <div class='row text-box'>
                     <div class='col-sm-12'>
 
-                      <%= @article.text %>
+                      <%= @article.text.html_safe %>
 
 
                     </div>
