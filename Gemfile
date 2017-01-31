@@ -24,7 +24,9 @@ gem 'raygun4ruby'
 
 gem 'faker'
 
-gem 'rails_admin', '~> 1.0'
+
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 group :development, :test do
   gem 'binding_of_caller'

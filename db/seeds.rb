@@ -22,8 +22,7 @@ articles = []
 5.times do
   articles << Article.create!({
     title: Faker::ChuckNorris.fact,
-    bio: Faker::Lorem.paragraphs,
+    text: Faker::Lorem.paragraphs,
     })
-  x += 1
 end
 
