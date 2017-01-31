@@ -1,4 +1,5 @@
 
+
 <%= form_for @article do |f| %>
 
   <% if @article.errors.any? %>
@@ -29,4 +30,11 @@
     <%= f.submit %>
   </p>
 
+<% end %>
+
+
+<%= form_for @article do |form| %>
+ <%= form.cktext_area :text, class: 'someclass', ckeditor: { language: 'uk'}  %>
+ <%= form.cktext_area :title, value: 'Default value', id: 'sometext'  %>
+ <%= cktext_area :text, :info, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }  %>
 <% end %>

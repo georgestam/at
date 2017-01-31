@@ -28,6 +28,8 @@ gem 'faker'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 
+gem 'ckeditor'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
