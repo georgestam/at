@@ -3,7 +3,9 @@ RailsAdmin.config do |config|
   config.model Article do
     edit do
       # For RailsAdmin >= 0.5.0
+      field :title, :ck_editor
       field :text, :ck_editor
+
       # For RailsAdmin < 0.5.0
       # field :description do
       #   ckeditor true
