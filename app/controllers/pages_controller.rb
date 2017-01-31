@@ -10,9 +10,6 @@ class PagesController < ApplicationController
   def services
   end
 
-  def blog
-  end
-
   def contact
   end
 

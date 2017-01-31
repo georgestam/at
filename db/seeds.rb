@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+require 'faker'
 
 
 admin = User.new ({
@@ -17,4 +17,13 @@ admin = User.new ({
 
 admin.save
 
+
+articles = []
+5.times do
+  articles << Article.create!({
+    title: Faker::ChuckNorris.fact,
+    bio: Faker::Lorem.paragraphs,
+    })
+  x += 1
+end
 

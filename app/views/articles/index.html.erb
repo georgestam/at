@@ -1,27 +1,5 @@
 
 
-<h1>Listing Articles</h1>
-<%= link_to 'New article', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="3"></th>
-  </tr>
-
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
-
 
   <div id='main' role='main'>
 
@@ -34,9 +12,14 @@
 
     <div id='main-content'>
       <div class='container'>
+        <div class="text-center">
+          <%#= link_to "Olivia, write something!", new_article_path, class: "btn btn-primary" %>
+        </div>
         <div class='row'>
           <div class='col-sm-12 col-sm-12 col-md-12'>
             <div class='text-boxes'>
+
+
 
             <% @articles.each do |article| %>
 
@@ -66,9 +49,17 @@
                       </a>
                     </div>
                     <div class='col-sm-12'>
-                      <p> <%= article.text %></p>
+                      <p> <%= article.text.first(100)%></p>
 
-                      <%= link_to "Read More", articles_path(article), class: "btn btn-contrast btn-bordered btn-xs" %>
+
+
+                      <%= link_to "Read More", article_path(article), class: "btn btn-contrast btn-bordered btn-xs" %>
+
+                      <% if current_user %>
+                        <%#= link_to "Edit", edit_article_path(article), class: "btn btn-success" %>
+                        <%#= link_to "Delete", article_path(article), class: "btn btn btn-danger",  method: :delete, data: { confirm: 'Are you sure?' } %>
+                      <% end %>
+
                     </div>
                   </div>
                   <hr class='hr-half'>
