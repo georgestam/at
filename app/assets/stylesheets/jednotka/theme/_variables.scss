@@ -75,25 +75,25 @@ $page-header-with-icon-size: 50px !default;
 $main-content-header-color: $white !default;
 
 // header
-$header-toggle-color: $white !default;
+$header-toggle-color: #676f7a !default;
 $header-toggle-hover-color: $contrast !default;
-$header-brand-color: $white !default;
+$header-brand-color: #676f7a !default;
 
 // navigation
 $nav-height: 90px !default;
-$nav-border-color: rgba($white, .25) !default;
-$nav-item-color: $white !default;
+$nav-border-color: rgba(#676f7a, .25) !default;
+$nav-item-color: #676f7a !default;
 $nav-item-stripe-color: $contrast !default;
 $nav-dropdown-bg: $contrast !default;
-$nav-dropdown-border-color: $white !default;
-$nav-dropdown-color: $white !default;
+$nav-dropdown-border-color: #676f7a !default;
+$nav-dropdown-color: #676f7a !default;
 $nav-dropdown-width: 200px !default;
 
 // navigation collapsed (mobile)
 $nav-collapsed-item-color: $nav-item-color !default;
-$nav-collapsed-item-hover-bg: rgba($white, .1) !default;
+$nav-collapsed-item-hover-bg: rgba(#676f7a, .1) !default;
 $nav-collapsed-item-active-bg: $contrast !default;
-$nav-collapsed-item-border-color: rgba($white, .1) !default;
+$nav-collapsed-item-border-color: rgba(#676f7a, .1) !default;
 $nav-collapsed-border-radius: 5px !default;
 $nav-collapsed-bg: rgba($dark, .98) !default;
 
