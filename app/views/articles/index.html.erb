@@ -22,84 +22,43 @@
 
 
             <% @articles.each do |article| %>
-
-              <div class='row text-box text-box-title-above text-box-big-image'>
+              
+              
+              <div class='row text-box text-box-title-above'>
                 <div class='col-sm-12'>
                   <h2>
-                  <%= link_to article.title.capitalize, article_path(article), class: 'title' %>
+                  <%= link_to article.title.capitalize, article_path(article), class: '', style:'text-decoration: none' %>
                   </h2>
                   <div class='toolbar'>
-
+                    <div class='btn btn-link'>
                       <i class='fa fa-calendar'></i>
                       <span> <%= article.created_at.strftime("%B %d %Y") %> </span>
-
-                    <!-- <a class='btn btn-link' href='#'>
-                      <i class='fa fa-user'></i>
-                      <span>John Doe</span>
-                    </a>
-                    <a class='btn btn-link' href='#'>
-                      <i class='fa fa-comments'></i>
-                      <span>13 comments</span>
-                    </a> -->
+                    </div>
                   </div>
                   <div class='row'>
-                    <div class='col-sm-12'>
-                      <a href='blog_single_post.html'>
-                        <!-- <img class="img-responsive center-block img-rounded-half" alt="Cras tempus ligula a tempor adipiscing" width="848" height="364" src="http://placehold.it/848x364" /> -->
-                      </a>
+                    <div class='col-sm-3'>
+
+                      <%= cl_image_tag(article.photo.presence || "at/apple.jpg", 
+                          :client_hints=>true, 
+                          :transformation=>[{:height => 180, :width => 300, :dpr=>"auto", :gravity=>"", :crop=>"fill"}], 
+                          :class => "img-responsive center-block img-rounded-half" ) %>
                     </div>
-                    <div class='col-sm-12'>
+                    <div class='col-sm-9'>
                       <p> <%= article.text.first(500).html_safe %></p>
-
-
-
+                      
                       <%= link_to "Read More", article_path(article), class: "btn btn-contrast btn-bordered btn-xs" %>
 
                       <% if current_user %>
                         <%#= link_to "Edit", edit_article_path(article), class: "btn btn-success" %>
                         <%#= link_to "Delete", article_path(article), class: "btn btn btn-danger",  method: :delete, data: { confirm: 'Are you sure?' } %>
                       <% end %>
-
                     </div>
                   </div>
                   <hr class='hr-half'>
                 </div>
               </div>
-
+              
               <% end %>
-              
-              
-              <div class='row text-box text-box-title-above'>
-                <div class='col-sm-12'>
-                  <%= link_to article.title.capitalize, article_path(article), class: 'title' %>
-                  <div class='toolbar'>
-                    <div class='btn btn-link'>
-                      <i class='fa fa-calendar'></i>
-                      <span>May 3, 2013</span>
-                    </div>
-                  </div>
-                  <div class='row'>
-                    <div class='col-sm-3'>
-
-
-                        <%= cl_video_tag("at/accent_int_for_Olivia",
-                          :height => 50,
-                          :controls => true,
-                          :class => "img-responsive center-block img-rounded-half small-height",
-                          :fallback_content => "Your browser does not support HTML5 video tags" ) %>
-
-
-                    </div>
-                    <div class='col-sm-9'>
-                      <p>Following an article in the media on the cultural connotations of certain accents, Olivia was spokesperson for the Chartered Institute of Linguists in this interview on sociolinguistics and the place that different accents have in society. </p>
-
-                    </div>
-                  </div>
-                  <hr class='hr-half'>
-                </div>
-              </div>
-
-
 
             </div>
           </div>

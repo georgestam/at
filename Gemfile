@@ -30,6 +30,10 @@ gem 'rails_admin', '>= 1.0.0.rc'
 
 gem 'ckeditor'
 
+gem 'friendly_id', '~> 5.1.0'
+
+gem 'carrierwave', '~> 1.0'
+
 gem 'fileutils', '~> 0.7'
 
 group :development, :test do

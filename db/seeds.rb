@@ -26,3 +26,7 @@ articles = []
     })
 end
 
+url = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
+article = Article.first
+article.photo = url
+article.save
