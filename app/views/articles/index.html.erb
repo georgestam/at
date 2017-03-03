@@ -67,6 +67,37 @@
               </div>
 
               <% end %>
+              
+              
+              <div class='row text-box text-box-title-above'>
+                <div class='col-sm-12'>
+                  <%= link_to article.title.capitalize, article_path(article), class: 'title' %>
+                  <div class='toolbar'>
+                    <div class='btn btn-link'>
+                      <i class='fa fa-calendar'></i>
+                      <span>May 3, 2013</span>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-3'>
+
+
+                        <%= cl_video_tag("at/accent_int_for_Olivia",
+                          :height => 50,
+                          :controls => true,
+                          :class => "img-responsive center-block img-rounded-half small-height",
+                          :fallback_content => "Your browser does not support HTML5 video tags" ) %>
+
+
+                    </div>
+                    <div class='col-sm-9'>
+                      <p>Following an article in the media on the cultural connotations of certain accents, Olivia was spokesperson for the Chartered Institute of Linguists in this interview on sociolinguistics and the place that different accents have in society. </p>
+
+                    </div>
+                  </div>
+                  <hr class='hr-half'>
+                </div>
+              </div>
 
 
 
