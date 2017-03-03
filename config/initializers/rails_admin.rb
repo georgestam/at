@@ -5,6 +5,8 @@ RailsAdmin.config do |config|
       # For RailsAdmin >= 0.5.0
       field :title, :text
       field :text, :ck_editor
+      field :photo, :carrierwave
+
 
       # For RailsAdmin < 0.5.0
       # field :description do

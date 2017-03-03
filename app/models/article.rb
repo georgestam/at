@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+
   extend FriendlyId
   friendly_id :title, use: :slugged
   
@@ -10,8 +11,7 @@ class Article < ApplicationRecord
   validates :text, presence: true
                     
                     
-  mount_uploader :photo, PhotoUploader
-
-  
+  attr_accessor :photo, :photo_cache, :remove_photo
+  mount_uploader :photo, PhotoUploader  
 
 end
