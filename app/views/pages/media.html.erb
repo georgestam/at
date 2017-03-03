@@ -1,27 +1,26 @@
 
       <div id='main' role='main'>
 
-      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path("at/blurry.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :gravity=>"", :crop=>"fill"}]) %>');">
+      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path("at/blurry.jpg", :client_hints=>true, :transformation=>[{:width=>2000, :height=>1000, :dpr=>"auto", :gravity=>"", :crop=>"fill"}]) %>');">
         <div>
            <h1 class='big fadeInRightBig animated'>Media</h2>
         </div>
       </div>
-        <div id='main-content'>
-          <div class='container'>
-
-
-            <div class='row'>
-              <div class='col-sm-12'>
-                <div class='text-center'>
-                </div>
+      
+      <div id='main-content'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <p class='lead lead-lg text-center'>
+                At Academia Translations we are passionate about the past, present and future of languages. 
+              </p>
+          
+          
                 <div class='row'>
                   <div class='col-sm-12'>
                     <p class='lead lead-xs'>
-                   At Academia Translations we are passionate about the past, present and future of languages. Our director, Olivia, is a spokesperson for the Chartered Institute of Linguists and welcomes invitations from the media to discuss any language related topic. <br> <br>
-
-                   Appearances to date include:
-
-
+                  Our director, Olivia, is a spokesperson for the Chartered Institute of Linguists and welcomes invitations from the media to discuss any language related topic. <br><br>
+                  Appearances to date include:
 
                    <br>
                     </p>
@@ -37,14 +36,13 @@
                       <div class='toolbar'>
                         <div class='btn btn-link'>
                           <i class='fa fa-calendar'></i>
-                          <span>April 14, 2011</span>
+                          <span>October 7, 2010</span>
                         </div>
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
-
-
-                            <%= cl_image_tag("at/bbc.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], :class => "img-responsive center-block img-rounded-half" ) %>
+                          
+                          <iframe class="img-responsive center-block img-rounded-half" src="https://www.youtube.com/embed/cysu-MF8Xcg" frameborder="0" allowfullscreen></iframe>
 
                         </div>
                         <div class='col-sm-9'>
@@ -61,13 +59,14 @@
                       <div class='toolbar'>
                         <div class='btn btn-link'>
                           <i class='fa fa-calendar'></i>
-                          <span>Sep 8, 2010</span>
+                          <span>November 8, 2010</span>
                         </div>
                       </div>
                       <div class='row'>
                         <div class='col-sm-3'>
 
                             <iframe class="img-responsive center-block img-rounded-half" src="https://www.youtube.com/embed/cysu-MF8Xcg" frameborder="0" allowfullscreen></iframe>
+                  
 
                         </div>
                         <div class='col-sm-9'>
@@ -78,6 +77,36 @@
                       <hr class='hr-half'>
                     </div>
                   </div>
+                  
+                  <div class='row text-box text-box-title-above'>
+                    <div class='col-sm-12'>
+                      <h2>TVE Spanish Television</h2>
+                      <div class='toolbar'>
+                        <div class='btn btn-link'>
+                          <i class='fa fa-calendar'></i>
+                          <span>May 5, 2012</span>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-sm-3'>
+                            <div>
+                            <%= cl_video_tag("at/Saca_la_lengua1",
+                              :crop => "fill",
+                              :controls => true,
+                              :class => "img-responsive center-block img-rounded-half",
+                              :fallback_content => "Your browser does not support HTML5 video tags" ) %>
+                            </div>
+                        </div>
+                        <div class='col-sm-9'>
+                          <p>Spanish is one of Latin's direct descendants and it may be argued that is just an "evolved" form of Latin with a different name. In this interview with TVE's programme "Saca la Lengua", Olivia discusses the use of Latin terms in Spanish.
+                           </p>
+
+                        </div>
+                      </div>
+                      <hr class='hr-half'>
+                    </div>
+                  </div>
+                  
                   <div class='row text-box text-box-title-above'>
                     <div class='col-sm-12'>
                       <h2> UCB UK National Radio</h2>
@@ -110,7 +139,7 @@
 
                   <div class='row text-box text-box-title-above'>
                     <div class='col-sm-12'>
-                      <h2> RT.COM Filming</h2>
+                      <h2> RT.com News Online </h2>
                       <div class='toolbar'>
                         <div class='btn btn-link'>
                           <i class='fa fa-calendar'></i>
@@ -121,11 +150,11 @@
                         <div class='col-sm-3'>
 
 
-                            <%= cl_image_tag("at/RT.COM_Filming_with_Martyn_Andrews.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], :class => "img-responsive center-block img-rounded-half" ) %>
+                            <%= cl_image_tag("at/RT.COM_Filming_with_Martyn_Andrews.jpg", :client_hints=>true, :transformation=>[{:height => 180, :width => 300, :dpr=>"auto", :gravity=>"", :crop=>"fill"}], :class => "img-responsive center-block img-rounded-half" ) %>
 
                         </div>
                         <div class='col-sm-9'>
-                          <p>RT.COM Filming with Martyn Andrews from rt.com on the evolution of the English language and how technology is changing the way we speak.</p>
+                          <p>Filming with Martyn Andrews from RT.com online news on how technology is changing the way we speak and write. The main focus of the interview was "text speak" and how some children are using abbreviated spelling in their school work. Is this laziness or just another reflection of how the world we live in influences our language? </p>
 
                         </div>
                       </div>
@@ -133,34 +162,7 @@
                     </div>
                   </div>
 
-                  <div class='row text-box text-box-title-above'>
-                    <div class='col-sm-12'>
-                      <h2>TVE Spanish Television</h2>
-                      <div class='toolbar'>
-                        <div class='btn btn-link'>
-                          <i class='fa fa-calendar'></i>
-                          <span>Sept 1, 2015</span>
-                        </div>
-                      </div>
-                      <div class='row'>
-                        <div class='col-sm-3'>
-                            <div>
-                            <%= cl_video_tag("at/Saca_la_lengua1",
-                              :crop => "fill",
-                              :controls => true,
-                              :class => "img-responsive center-block img-rounded-half",
-                              :fallback_content => "Your browser does not support HTML5 video tags" ) %>
-                            </div>
-                        </div>
-                        <div class='col-sm-9'>
-                          <p>Spanish is one of Latin's direct descendants and it may be argued that is just an "evolved" form of Latin with a different name. In this interview with TVE's programme "Saca la Lengua", Olivia discusses the use of Latin terms in Spanish.
-                           </p>
-
-                        </div>
-                      </div>
-                      <hr class='hr-half'>
-                    </div>
-                  </div>
+            
 
 
                 </div>
