@@ -10,7 +10,6 @@ class Article < ApplicationRecord
   validates :title, presence: true
   validates :text, presence: true
                     
-                    
   attr_accessor :photo, :photo_cache, :remove_photo
   mount_uploader :photo, PhotoUploader  
 
