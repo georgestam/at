@@ -5,7 +5,7 @@
 
     <div class="hidden-xs hidden-sm visiblr-md-* visible-lg-*">
   
-      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path( @article.photo.presence || "at/apple.jpg", :client_hints=>true, :transformation=>[{:width=>1700, :height=>850, :dpr=>"auto", :gravity=>"south", :crop=>"fill"}]) %>');">
+      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path( @article.photo.presence || "at/apple.jpg", :client_hints=>true, :transformation=>[{:width=>1700, :height=>850, :dpr=>"auto", :gravity=> @article.gravity, :crop=>"fill"}]) %>');">
         <div>
            <h1 class='big fadeInRightBig animated'><%=  @article.title %></h1>
         </div>
@@ -15,9 +15,9 @@
     
     <div class="hidden-md hidden-lg visible-xs-* visible-sm-*">
   
-      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path( @article.photo.presence || "at/apple.jpg", :client_hints=>true, :transformation=>[{:x=>1000, :y=>200,:width=>3400, :height=>1700, :dpr=>"auto", :gravity=>"", :crop=>"crop"}]) %>');">
+      <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path( @article.photo.presence || "at/apple.jpg", :client_hints=>true, :transformation=>[{:x=>@article.x_mobil, :y=>@article.y_mobil,:width=>3400, :height=>1700, :dpr=>"auto", :gravity=>"", :crop=>"crop"}]) %>');">
         <div>
-           <p class=''><%= @article.title %></p>
+           
         </div>
       </div>
     
@@ -96,7 +96,7 @@
                     <div class='col-sm-12'>
                       <h2 class='title'>
 
-
+                        <%= @article.title %>
 
                       </h2>
                       <div class='toolbar'>
