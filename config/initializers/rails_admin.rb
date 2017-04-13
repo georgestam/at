@@ -6,7 +6,10 @@ RailsAdmin.config do |config|
       field :title, :text
       field :text, :ck_editor
       field :photo, :carrierwave
-
+      
+      field :x_mobil, :integer
+      field :y_mobil, :integer
+      field :gravity, :string
 
       # For RailsAdmin < 0.5.0
       # field :description do
