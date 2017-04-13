@@ -6,9 +6,6 @@
     <div class="hidden-xs hidden-sm visiblr-md-* visible-lg-*">
   
       <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.2) 50%), url('<%= cl_image_path( @article.photo.presence || "at/apple.jpg", :client_hints=>true, :transformation=>[{:width=>1700, :height=>850, :dpr=>"auto", :gravity=> @article.gravity, :crop=>"fill"}]) %>');">
-        <div>
-           <h1 class='big fadeInRightBig animated'><%=  @article.title %></h1>
-        </div>
       </div>
     
     </div>
@@ -23,115 +20,49 @@
     
     </div>
 
-        <div id='main-content'>
+        <div id='main-content-no-padding'>
           <div class='container'>
             <div class='row'>
-              <!-- <div class='col-md-push-9 col-sm-push-8 col-sm-4 col-md-3'>
-                <nav class='sidebar'>
-                  <button class='btn btn-block btn-contrast sidebar-toggle' data-target='.sidebar-collapse' data-toggle='collapse' type='button'>
-                    <span class='sr-only'>Toggle navigation</span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                  </button>
-                  <div class='sidebar-collapse collapse'>
-                    <div class='box'>
-                      <h3 class='title'>Search in blog</h3>
-                      <form >
-                        <div class='input-group'>
-                          <input class='form-control' placeholder='Search...' type='text'>
-                          <span class='input-group-btn'>
-                            <button class='btn btn-contrast' type='button'>
-                              <i class='fa fa-search'></i>
-                            </button>
-                          </span>
-                        </div>
-                      </form>
-                    </div>
-
-
-
-                    <div class='box social-box'>
-                      <h3 class='title'>Latest tweets</h3>
-                      <div class='icon-boxes icon-boxes-nowrap'>
-                        <div class='icon-box'>
-                          <div class='icon icon-wrap'>
-                            <i class='fa fa-twitter text-contrast'></i>
-                          </div>
-                          <div class='content'>
-                            <p>
-                              Phasellus vulputate lobortis sem. Mauris id velit in urna.
-                              <br>
-                              <a class='time' href='#'>
-                                <i>1 hour ago</i>
-                              </a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class='icon-box'>
-                          <div class='icon icon-wrap'>
-                            <i class='fa fa-twitter text-contrast'></i>
-                          </div>
-                          <div class='content'>
-                            <p>
-                              Etiam luctus, dui congue tempus blandit, dui.
-                              <br>
-                              <a class='time' href='#'>
-                                <i>3 hours ago</i>
-                              </a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </nav>
-              </div> -->
+      
               <div class='col-sm-12'>
-              <!-- <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'> -->
-                <div class='text-boxes'>
-                  <div class='row text-box text-box-title-above text-box-big-image'>
+    
+                <div class=''>
+                  <div class='row text-box-title-above text-box-big-image'>
                     <div class='col-sm-12'>
-                      <h2 class='title'>
+                      <h1 class='article-title'>
 
                         <%= @article.title %>
 
-                      </h2>
-                      <div class='toolbar'>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-calendar'></i>
-                           <span> <%= @article.created_at.strftime("%B %d %Y") %> </span>
-                        </a>
-                      <!--   <a class='btn btn-link' href='#'>
-                          <i class='fa fa-user'></i>
-                          <span>John Doe</span>
-                        </a>
-                        <a class='btn btn-link' href='#'>
-                          <i class='fa fa-comments'></i>
-                          <span>13 comments</span>
-                        </a> -->
-                      </div>
+                      </h1>
+                      
+                      <p> <span> Published on <%= @article.created_at.strftime("%B %d %Y") %> </span>
+                      
+                      <hr style= "margin-bottom:10px">
+                      
+                    
+                            <div class='row'>
+                              <div class='col-sm-10 col-lg-2'>
+
+                                <%= cl_image_tag("at/olivia.jpg", class:"img-circle img-responsive center-block", :client_hints=>true, :transformation=>[{:dpr=>"auto"}], width: '60', height: '60' ) %>
+                              </div>
+                              <div class='col-sm-12 col-lg-10'>
+                                <p class=''><strong> Olivia Cockburn </strong></p>
+                                <p> <span> Academia Translations Director, MA, MA, PhD, MCIL, MITI </span>
+                                </p>
+                              </div>
+                            </div>
+                      
+                      
+                      
+                      <hr>
+                      
                       <div class='row'>
-                       <!--  <div class='col-sm-12'>
-                          <a href='blog_single_post.html'>
-                            <img class="img-responsive center-block img-rounded-half" alt="Cras tempus ligula a tempor adipiscing" width="848" height="364" src="http://placehold.it/848x364" />
-                          </a>
-                        </div>
-                        <div class='col-sm-12'>
-                          <p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo.</p>
-                        </div> -->
-                      <!-- </div>
-                      <hr class='hr-half'>
-                    </div> -->
                   </div>
-                  <div class='row text-box'>
-                    <div class='col-sm-12'>
-
+                  <div class='row'>
+                    <div class='col-sm-12 prose'>
+                      <h8>
                       <%= @article.text.html_safe %>
-
-
+                    </h8>
                     </div>
                   </div>
                   <div class='row'>
@@ -150,8 +81,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class=''>
-                  <%= link_to 'Back', articles_path, class: "btn btn-primary"  %>
+                  <div>
+                  <%= link_to 'Back', articles_path, class: "btn btn-primary", style: "margin-bottom: 20px" %>
                   </div>
 
                 </div>
