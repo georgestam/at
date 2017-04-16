@@ -10,4 +10,16 @@ module MetaTagsHelper
   def meta_image
     content_for?(:meta_image) ? content_for(:meta_image) : DEFAULT_META['meta_image']
   end
+  
+  def meta_blog_title
+    @article.title
+  end
+
+  def meta_blog_description
+    @article.text.html_safe
+  end
+
+  def meta_blog_image
+    @article.photo
+  end
 end
