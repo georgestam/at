@@ -18,16 +18,13 @@
 
     <!-- metadata -->
     
-    <% if @article %>
+    <% if true #@article %>
     
       <!-- Google+ Schema.org markup -->
       <meta itemprop="name" content="<%= meta_blog_title %>">
       <meta itemprop="title" content="<%= meta_blog_title %>">
       <meta itemprop="description" content="<%= meta_blog_description %>">
-      <meta itemprop="image" content="<%= cl_image_tag(@article.photo.presence || "at/apple.jpg", 
-          :client_hints=>true, 
-          :transformation=>[{:height => 180, :width => 300, :dpr=>"auto", :gravity=>"", :crop=>"fill"}], 
-          :class => "img-responsive center-block img-rounded-half" ) %>">
+      <meta itemprop="image" content="<%= cl_image_tag(@article.photo.presence)%>">
           
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary_large_image">
@@ -35,11 +32,7 @@
       <meta name="twitter:title" content="<%= meta_blog_title %>">
       <meta name="twitter:description" content="<%= meta_blog_description %>">
       <meta name="twitter:creator" content="<%= DEFAULT_META['twitter_account'] %>">
-      <meta name="twitter:image:src" content="<%= cl_image_tag(@article.photo.presence || "at/apple.jpg", 
-          :client_hints=>true, 
-          :transformation=>[{:height => 180, :width => 300, :dpr=>"auto", :gravity=>"", :crop=>"fill"}], 
-          :class => "img-responsive center-block img-rounded-half" ) %>">
-    
+      <meta itemprop="image" content="<%= cl_image_tag(@article.photo.presence)%>">    
     <% else %>
     
       <!-- Google+ Schema.org markup -->
