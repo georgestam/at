@@ -23,14 +23,12 @@
       <!-- Google+ Schema.org markup -->
       <meta itemprop="name" content="<%= meta_blog_title %>">
       <meta itemprop="title" content="<%= meta_blog_title %>">
-      <meta itemprop="description" content="<%= meta_blog_description %>">
       <meta itemprop="image" content="<%= cl_image_tag(@article.photo.presence)%>">
           
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:site" content="<%= DEFAULT_META['twitter_account'] %>">
       <meta name="twitter:title" content="<%= meta_blog_title %>">
-      <meta name="twitter:description" content="<%= meta_blog_description %>">
       <meta name="twitter:creator" content="<%= DEFAULT_META['twitter_account'] %>">
       <meta itemprop="image" content="<%= cl_image_tag(@article.photo.presence)%>">    
     <% else %>
