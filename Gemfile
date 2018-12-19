@@ -26,7 +26,7 @@ gem 'faker'
 
 
 gem 'remotipart', github: 'mshibuya/remotipart'
-gem 'rails_admin', '>= 1.0.0.rc'
+gem 'rails_admin', '1.1.1'
 
 gem 'ckeditor'
 
@@ -34,7 +34,7 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'carrierwave', '~> 1.0'
 
-gem 'fileutils', '~> 0.7'
+gem 'fileutils', '1.1.0'
 
 group :development, :test do
   gem 'binding_of_caller'
@@ -46,5 +46,3 @@ group :development, :test do
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-

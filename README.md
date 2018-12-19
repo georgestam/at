@@ -1,4 +1,4 @@
-This project is developed for my client Acadamedia Translations (http://www.academiatranslations.co.uk/)
+This project is developed for my client Acadamedia Translations (https://www.academiatranslations.co.uk/)
 
 It is an ongoing project, as the plan is for this to become a more dynamic platform.
 

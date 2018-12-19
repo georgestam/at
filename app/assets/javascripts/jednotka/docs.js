@@ -1,9 +1,9 @@
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -18,10 +18,10 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -71,10 +71,10 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -141,10 +141,10 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)

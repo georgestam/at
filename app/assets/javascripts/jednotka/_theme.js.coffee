@@ -1,7 +1,7 @@
 ###
 * --------------------------------------------------------------------------------------------------------------------
 * Name: Jednotka - Multipurpose Website HTML Template
-* Author: http://themeforest.net/user/BublinaStudio
+* Author: https://themeforest.net/user/BublinaStudio
 * Version: 1.8
 * --------------------------------------------------------------------------------------------------------------------
 ###
